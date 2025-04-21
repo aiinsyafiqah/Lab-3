@@ -9,24 +9,24 @@
     }
 
     body {
-      background-color: #000;
-      color: white;
-      font-family: Arial, sans-serif;
+      background-color:#f3B6AD;
+      color: rgb(255, 255, 255);
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
       margin: 0;
       height: 100vh;
       display: flex;
-      justify-content: center;
-      align-items: top;
+      justify-content: left;
+      align-items: center;
     }
 
     .container {
-      text-align: center;
+      text-align: left;
     }
 
     #helloText {
       font-size: 3em;
       height: 1.2em;
-      animation: fade 1s ease-in-out;
+      animation: fade 2.5s ease-in-out;
       transition: opacity 0.5s ease-in-out;
     }
 
@@ -37,22 +37,24 @@
     }
 
     #introText {
-      font-size: 1.5em;
+      font-size: 1em;
       margin-top: 20px;
     }
+
+    
   </style>
 </head>
 <body>
 
   <div class="container">
     <div id="helloText">Hello</div>
-    <div id="introText">My name is Nur Ain Syafiqah Binti Nor Azlan<br>
-    I'm currently in my 3rd year Bachelor's Degree in Information Technology
+    <div id="introText"><h5>My name is Nur Ain Syafiqah Binti Nor Azlan<br>
+      I'm currently in my 3rd year Bachelor's Degree in Information Technology</h5>
     </div>
   </div>
 
   <script>
-    const greetings = ["Hello!", "Hola !", "안녕하세요!", "مرحباً", "Hallo!"];
+    const greetings = ["Hello !", "Hola !", "안녕하세요!", "مرحباً", "Hallo!","你好"];
     const helloText = document.getElementById("helloText");
     let index = 0;
 
