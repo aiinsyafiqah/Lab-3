@@ -8,12 +8,11 @@
       background-color:#f3B6AD;
       color: rgb(255, 255, 255);
       font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-      margin: 0;
-      height: 100vh;
       display: flex;
       flex-direction: column;
       margin: 0;
       padding: 0;
+      height: auto;
     }
 
     .top-bar {
@@ -27,6 +26,50 @@
       color: white;
       text-decoration: none;
     }
+
+    .textStyle1{
+        text-align: center;
+        font-family:'Times New Roman', Times, serif;
+        font-weight: 0;
+    }
+
+    .paragraphStyle{
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: justify;
+        font-style: italic;
+        width: 30%;
+        margin: 0;
+    }
+
+    .image-row{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        margin-top: 20px;
+        flex-wrap: wrap;
+    }
+
+    .imageStyle{
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        padding: 20px;
+        margin-bottom: 10px;
+    }
+
+    .memory{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .caption{
+        text-align: center;
+
+    }
+
   </style>
 
   <body>
@@ -38,7 +81,91 @@
           <a class="top-bar" href="task_1.html">MY BIODATA</a>
           <a class="top-bar" href="campus.html">CAMPUS LIFE</a>
         </div>
-  
+
+        <h2 class="textStyle1">First Memory in UTHM</h2>
+
+    <!--First Memory in UTHM-->
+    <div class="memory">
+        <img src="first day in uthm.jpg" class="imageStyle">
+        <p class="paragraphStyle">A new chapter began with the sound of birds chirping–
+            nervous hearts,curious eyes,and dreams waiting to unfold
+        </p>
+    </div>
+
+    <br>
+    <!--1st Hangout-->
+    <h2 class="textStyle1">1st Hangout</h2>
+
+    <div class="image-row">
+        <img src="1sthangout.jpg" class="imageStyle">
+        <video class="imageStyle" controls>
+            <source src="video piano.mp4" type="video/mp4">
+        </video>
+        <img src="eat1sthangout.jpg" class="imageStyle">
+        
+    </div>
+
+    <p class="caption">A little awkward, a little magical–our first hangout was the 
+        beginning of something beautiful
+    </p>
+
+    <br>
+    <br>
+    <!--Volunteering Zoo-->
+    <h2 class="textStyle1">Volunteering in Zoo Negara</h2>
+
+    <div class="image-row">
+        <img src="zoo.jpg" class="imageStyle">
+        <img src="burungsakit.jpg" class="imageStyle">
+        <img src="groupPhoto.jpg" class="imageStyle">
+        
+    </div>
+
+    <p class="caption">Got muddy, got tired, got loved by the parrot. Best. Day. Ever.</p>
+
+    <br>
+    <br>
+    <!--AJK Fun Run-->
+    <h2 class="textStyle1">AJK Fun Run 2024</h2>
+
+    <div class="image-row">
+        <img src="ajkfunrungroup.jpg" class="imageStyle">
+        <video width="30%" controls>
+            <source src="ajkvideo.mp4" type="video/mp4">
+        </video>
+        <img src="sijilfunrun.jpg" class="imageStyle">
+        
+       </div>
+
+       <p class="caption">We didn't run for medals–we ran the show</p>
+
+       <br>
+       <br>
+    <!--trip to JB-->
+    <h2 class="textStyle1">Trip to Johor Bahru</h2>
+    <div class="image-row">
+        <img src="ultras jdt.jpg" class="imageStyle">
+        <video width="30%" controls>
+            <source src="video goal.mp4" type="video/mp4">
+        </video>
+        <img src="group photo stadium.jpg" class="imageStyle">
+    </div>
+
+    <p class="caption">Stepped into the stadium, left with adrenaline, 
+        memories, and maybe a lost voice 🐯💙❤️</p>
+
+    <div class="image-row">
+            <img src="raincoat indah.jpg" class="imageStyle">
+            <video width="30%" controls>
+            <source src="video zoo.mp4" type="video/mp4">
+            </video>
+            <img src="gambar zulaikha.jpg" class="imageStyle">
+        </div>
+    
+        <p class="caption">Spent the day monkeying around with my favourite people</p>
   </div>
-  
+
+
   </body>
+
+</html>
