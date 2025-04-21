@@ -2,26 +2,34 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Greeting Animation</title>
+  <title>My Website</title>
   <style>
     * {
       box-sizing: border-box;
     }
 
-    body {
+    .container {
       background-color:#f3B6AD;
       color: rgb(255, 255, 255);
       font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
       margin: 0;
       height: 100vh;
       display: flex;
-      justify-content: left;
-      align-items: center;
+      flex-direction: column;
+      margin: 0;
+      padding: 0;
     }
 
-    .container {
-      text-align: left;
+    .center-box{
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      position:absolute;
+      top:50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      text-align: center;
+      gap: 20px;
     }
+
 
     #helloText {
       font-size: 3em;
@@ -39,18 +47,47 @@
     #introText {
       font-size: 1em;
       margin-top: 20px;
+    }    
+
+    .top-bar {
+      background-color: #e18585;
+      display: flex;
+      flex-direction:row;
+      gap: 25px;
+      justify-content: space-between;
+      /* align-items: center; */
+      padding: 12px 30px;
+      color: white;
+      text-decoration: none;
     }
 
-    
-  </style>
-</head>
-<body>
 
-  <div class="container">
+  </style>
+
+
+<body>
+<div class="container">
+
+      <!--top-->
+      <div class="top-bar">
+        <a class="top-bar" href="">HOME</a>
+        <a class="top-bar" href="">MY BIODATA</a>
+        <a class="top-bar" href="">CAMPUS LIFE</a>
+      </div>
+
+
+
+</div>
+
+
+<!--Hello & Intro Text-->
+  <div class="center-box">
+    <img src="hello picture.png" width="200px">
     <div id="helloText">Hello</div>
     <div id="introText"><h5>My name is Nur Ain Syafiqah Binti Nor Azlan<br>
       I'm currently in my 3rd year Bachelor's Degree in Information Technology</h5>
-    </div>
+  </div>
+   
   </div>
 
   <script>
@@ -68,5 +105,9 @@
     }, 3000);//this is the hello pace
   </script>
 
+  
+
+
 </body>
+
 </html>
